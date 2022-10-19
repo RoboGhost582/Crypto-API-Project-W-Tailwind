@@ -9,16 +9,16 @@ function Navbar() {
       </div>
       <div className="hidden md:flex">
         <h1>
-          <a className="mr-10">Home</a>
+          <a className="mr-10" href='/home'>Home</a>
         </h1>
         <h1>
-          <a className="mr-10">Featured</a>
+          <a className="mr-10" href='/featured'>Featured</a>
         </h1>
         <h1>
-          <a className="mr-10">Earn</a>
+          <a className="mr-10" href='/earn'>Earn</a>
         </h1>
         <h1>
-          <a>Contact</a>
+          <a href='/contact'>Contact </a>
         </h1>
       </div>
       <div>

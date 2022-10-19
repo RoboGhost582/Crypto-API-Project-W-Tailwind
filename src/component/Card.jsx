@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
-import { FiArrowUpRight, FiArrowDown } from 'react-icons/fi'
 
 
 function Card() {
@@ -19,11 +18,11 @@ function Card() {
         const addCommans = item.current_price > 1000
         return (
             <div class="flex flex-col items-center text-center justify-center w-44 h-44 bg-white rounded-lg border border-gray-200 shadow-xl dark:bg-gray-800 dark:border-gray-700 mb-4 mr-6 " >
-                <a href="#">
+                <a href='/home'>
                     <img class="rounded-t-lg mt-4 " src={item.image} alt={item.id} height='50' width='50' />
                 </a>
                 <div class="p-5">
-                    <a href="#">
+                    <a href="/home">
                         <h5 class="font-bold tracking-tight text-gray-900 dark:text-white" style={{ textTransform: 'capitalize' }}>{item.id}</h5>
                     </a>
                     <p class="font-normal text-gray-700 dark:text-gray-400">${addCommans ? item.current_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : item.current_price.toFixed(2)}</p>
